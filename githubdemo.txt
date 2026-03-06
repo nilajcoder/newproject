@@ -1,0 +1,102 @@
+
+D:\>mkdir newproject
+
+D:\>cd newproject
+
+D:\newproject>git init
+Initialized empty Git repository in D:/newproject/.git/
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ touch prrojectone.txt
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git add .
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git commit -m "projectone"
+[master (root-commit) 26891a1] projectone
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 prrojectone.txt
+
+
+Publish Branch Open With Vs code and Publish the branch
+
+I need to see my branch
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch
+* master
+
+How to Create a branch
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch featureone
+
+I want to see my branch
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch
+  featureone
+* master
+
+I want Switch Branch 
+
+$ git checkout featureone
+Switched to branch 'featureone'
+
+Publish the branch 
+
+ git push -u origin featureone
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'featureone' on GitHub by visiting:
+remote:      https://github.com/nilajcoder/newproject/pull/new/featureone
+remote:
+To https://github.com/nilajcoder/newproject.git
+ * [new branch]      featureone -> featureone
+branch 'featureone' set up to track 'origin/featureone'.
+
+
+
+
+
+nilaj@hp MINGW64 /d/newproject (featureone)
+$ git branch
+* featureone
+  master
+
+Open File Some Changes and add and commmit
+nilaj@hp MINGW64 /d/newproject (featureone)
+$ git add .
+
+nilaj@hp MINGW64 /d/newproject (featureone)
+$git push
+
+
+nilaj@hp MINGW64 /d/newproject (featureone)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch
+  featureone
+* master
+
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch featuretwo
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git branch
+  featureone
+  featuretwo
+* master
+
+nilaj@hp MINGW64 /d/newproject (master)
+$ git checkout featuretwo
+Switched to branch 'featuretwo'
+
+add file in vs code publish the branch commit push
+
+
+
